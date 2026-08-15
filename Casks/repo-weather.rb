@@ -1,11 +1,13 @@
 cask "repo-weather" do
   version "0.1.0"
-  sha256 "22678eb8cb8b025f11b5e99fdcaa75c592b0df8ec3186bb24b5f0b115693e257"
+  sha256 "0629f5061b9152821b5b4b161698d366724b4c9127ee156c3501a95f64221d9d"
 
   url "https://github.com/tianqueal/repo-weather/releases/download/v#{version}/RepoWeather.zip"
   name "RepoWeather"
-  desc "macOS Menu Bar app for GitHub repository metrics"
+  desc "Menu bar app for GitHub repository metrics"
   homepage "https://github.com/tianqueal/repo-weather"
+
+  depends_on macos: :sonoma
 
   app "RepoWeather.app"
 
