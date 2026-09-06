@@ -11,9 +11,8 @@ cask "repo-weather" do
 
   app "RepoWeather.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/RepoWeather.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/RepoWeather.app"]
   end
 
   zap trash: [
