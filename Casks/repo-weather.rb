@@ -1,6 +1,6 @@
 cask "repo-weather" do
-  version "0.1.1"
-  sha256 "28fcee167f3a1e5d2862bcbd09d8edd54d820e3894cef3536dc8a76df44ca5da"
+  version "0.1.2"
+  sha256 "7920a64dfb1b9690e77f519f8234a3a48d9171bcdbfedc702389e41a04cf43fb"
 
   url "https://github.com/tianqueal/repo-weather/releases/download/v#{version}/RepoWeather.zip"
   name "RepoWeather"
